@@ -1,9 +1,14 @@
-import Projects from './components/Projects';
+import Header from './components/sections/Header';
+import Content from './components/sections/Content';
+import Footer from './components/sections/Footer';
 
+// In our main App component, render only single instances of Header and Footer
 function App() {
   return (
-    <div className="bucket-app">
-      <Projects />
+    <div>
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
