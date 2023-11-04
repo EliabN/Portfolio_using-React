@@ -1,0 +1,391 @@
+/* Colour variables
+CSS from previous Portfolio made*/
+
+:root {
+  --dGrey: #2a2b3c;
+  --lBlue: #25c5dd;
+  --tBlack: black;
+}
+
+/* Universal elements */
+/* Header on page */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5%;
+  padding-bottom: 1%;
+  background-color: var(--dGrey);
+}
+
+header h1 {
+  display: flex;
+  font-size: 320%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--lBlue);
+  color: var(--dGrey);
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-right: 0.7%;
+  padding-left: 6%;
+}
+
+header a {
+  color: var(--dGrey);
+  text-decoration-line: none;
+}
+
+
+nav {
+  display: block;
+  font-size: 140%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+  margin-right: 70px;
+}
+
+/* All Links on page */
+nav a {
+  color: var(--lBlue);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin: 16px;
+}
+
+footer nav a {
+  color: var(--dGrey);
+}
+
+nav a::after {
+  content: "";
+  position: absolute; /* Positioning */
+  left: 50%; /* Position the underline from the center */
+  transform: translateX(-50%); /* Move the underline back by half of its width */
+  bottom: -50%; /* Adjust this value to control the thickness of the underline */
+  width: 120%;
+  height: 18%; /* Adjust this value to control the height of the underline */
+  background-color: var(--lBlue); /* Adjust this value to set the color of the underline */
+}
+
+h2 {
+  display:inline-block;
+  font-size: 320%;
+  text-align: right;
+  color: var(--dGrey); 
+  padding-top: 0.5%;
+  padding-right: 1%;
+  border-right-style: solid;
+  border-right-color: var(--dGrey);
+  border-right-width: 5px;
+}
+
+/* Add line under link */
+h2 ::after {
+  border-style: solid;
+  border-color: var(--dGrey);
+}
+
+/* Footer h2 */
+footer h2 {
+  padding-left: 5%;
+  width: 23%
+}
+
+/* Image to fit in container*/
+img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.5s ease;/* Add a smooth transition effect */
+}
+
+/* Picture highlight when hovered */
+img:hover {
+  filter: brightness(1.5); /* Adjust brightness to highlight the image */
+  cursor: pointer;
+}
+
+/* The here image */
+.hero {
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  margin-bottom: 1%;
+  background-image: url("../images/stars-hero.jpg");
+  background-size: cover;
+  background-position: center;/* Make image centre */
+}
+
+/* Text on hero image */
+.hero-text {
+  position: absolute;
+  right: 6%;
+  bottom: 15%;
+  font-size: 250%;
+  background-color: var(--lBlue);
+  color: var(--dGrey);
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-right: 0.7%;
+  padding-left: 0.7%;
+}
+
+/* All divided sections */
+.div {
+  display: flex;
+  text-align: right;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%; 
+}
+
+/* About Me h2 */
+.about-me-title {
+  width: 23%;  
+  padding-left: 10%;
+}
+
+/* Written Content */
+.info {
+  display: block;
+  font-size: 180%;
+  text-align: left;
+  color: var(--dGrey);
+  width: 77%;
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 2%;
+}
+
+/* Written Content paragraph*/
+.info p {
+  margin-bottom: 2%;
+}
+
+/* Work section */
+.work {
+  width: 23.4%;
+  padding-left: 10%;
+}
+
+/* Work division */
+.work-div {
+  display: block;
+  position: relative;
+  text-align: left;
+  align-items: top;
+  justify-content: space-between;
+  margin-left: 2%;
+  border-width: 5px;
+  width: 77.6%;;
+  overflow: hidden;
+}
+
+/* Photo side by side */
+.work-double-s-img {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Large image */
+.work-l-img {
+  display: flex;
+  position: relative; /* Positioning */
+  text-align: left;
+  border-style: solid;
+  border-color: var(--lBlue);
+  border-width: 5px;
+  margin: 1.5%;
+}
+
+/* Small image*/
+.work-s-img {
+  display: flex;
+  position: relative;
+  text-align: left;
+  align-items: top;
+  justify-content: space-between;
+  color: var(--dGrey);
+  border-style: solid;
+  border-color: var(--lBlue);
+  border-width: 5px;
+  overflow: hidden;
+  margin: 1.5%;
+  
+}
+
+/* Details of the work e.g name */
+#title-box {
+  position: absolute;
+  left: 169px;
+  transform: translate(-50%, -50%);
+  bottom: 0.1%;
+  background-color: var(--lBlue);
+  border-style: solid;
+  border-color: var(--lBlue);
+  border-width: 5px;
+  color: var(--tBlack);
+  width: 339px;
+  height: auto;
+}
+
+#title-box h3 {
+  font-size: 250%;
+  padding: 1%;
+}
+
+#title-box p {
+  font-size: 150%;
+  padding: 1%;
+}
+
+#title-box-p {
+  width: 100%;
+}
+
+
+/* Footer section */
+.footer-nav {
+  text-align: center; /* Align navigation links to the center */
+  
+}
+
+.footer-nav ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  display: inline-block; /* Display navigation links horizontally */
+  margin: 0 10px; /* Add spacing between links */
+}
+
+.footer-nav a {
+  text-decoration: none; /* Remove underline on links */
+  
+  color: #333; /* Set link color */
+}
+
+/* Adjust text size based on screen width */
+@media screen and (max-width: 1450px) {
+  .hero-text {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 250%;
+  }
+
+  .info {
+    font-size: 120%;
+  }
+
+  #title-box {
+  left: 124px;
+  font-size: 60%;
+  width: 250px;
+  }
+}
+
+/* Adjust text size based on screen width */
+@media screen and (max-width: 1200px) {
+  .hero-text {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 250%;
+  }
+
+  .info {
+    font-size: 120%;
+  }
+
+  #title-box {
+  left: 124px;
+  font-size: 60%;
+  width: 250px;
+  }
+}
+
+/* Responsive section */
+@media screen and (max-width: 992px) {
+  header {
+    flex-direction: column; /* Allow height to adjust based on content */
+  }
+
+  nav {
+    justify-content: center; /* Center the content horizontally */
+    align-self: center; /* Center the content vertically */
+  }
+
+  nav ul {
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 160%;
+  }
+
+  #title-box {
+    left: 100px;
+    font-size: 45%;
+    width: 200px;
+    }
+}
+
+
+/* Make hero text responsive and make navigation menu responsive*/
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 160%;
+  }
+
+  .info {
+    font-size: 100%;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  #title-box {
+    left: 65px;
+    font-size: 32%;
+    width: 130px;
+    }
+}
+
+/* Make hero text responsive and make navigation menu responsive*/
+@media screen and (max-width: 680px) {
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  #title-box {
+    left: 45px;
+    font-size: 18%;
+    width: 90px;
+    }
+}
