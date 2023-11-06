@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // Import different pages of application
 import About from './components/pages/About';
 import Projects from './components/pages/Projects';
+import Contact from './components/pages/Contact';
 
 
 // Accessible routes, and the components responding to URL
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/Projects',
         element: <Projects />,
+      },
+      {
+        path: '/Contact',
+        element: <Contact />,
       },
     ],
   },
