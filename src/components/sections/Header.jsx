@@ -2,7 +2,7 @@
 function Header() {
   return (
     <header>
-        <h1><a href="#Home">MyPortfolio</a></h1>
+        <h1><a href="#Home">Eliab Lumu</a></h1>
         <nav>
             <ul>
                 <li><a href="#About-Me">About Me</a></li>

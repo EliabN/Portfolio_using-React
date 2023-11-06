@@ -1,17 +1,22 @@
-import Header from './components/sections/Header';
+// Import Outlet from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
+import Nav from './components/NavTabs';
+//import Header from './components/sections/Header';
 import Hero from './components/sections/Hero';
-import Content from './components/sections/Content';
+//import Content from './components/sections/Content';
 import Footer from './components/sections/Footer';
 
-// In our main App component, render only single instances of Header and Footer
 function App() {
+  // The Outlet component will conditionally swap between the different pages according to the URL
   return (
-    <div>
-      <Header />
+    <>
+      <Nav />
       <Hero />
-      <Content />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
