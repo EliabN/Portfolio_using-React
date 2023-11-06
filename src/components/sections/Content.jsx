@@ -1,5 +1,4 @@
 // Content component for Portfolio
-// Import a CSS file as a dependency
 
 function Content() {
   return (

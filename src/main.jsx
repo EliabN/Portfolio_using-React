@@ -1,5 +1,5 @@
 // Import client-side ReactDOM from the react-dom library
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 // Import main App component
 import App from './App'
 // Import css styling
